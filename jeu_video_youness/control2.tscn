@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://oh67kcr57sjr"]
+
+[ext_resource type="Texture2D" uid="uid://vkwgskgh35m5" path="res://istockphoto-1223358826-612x612.jpg" id="1_4g44v"]
+[ext_resource type="Script" uid="uid://pbv277ebb044" path="res://restart.gd" id="2_1df28"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1df28"]
+texture = ExtResource("1_4g44v")
+modulate_color = Color(0.5649617, 0.5649616, 0.5649616, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_px6ft"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mmiqc"]
+bg_color = Color(0.8646751, 0.86467516, 0.8646753, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yrhcw"]
+bg_color = Color(0.72464234, 0.72464275, 0.72464246, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5rqtc"]
+
+[sub_resource type="FontVariation" id="FontVariation_p3yqo"]
+
+[node name="Control" type="Control" unique_id=1771073121]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=724531349]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_1df28")
+
+[node name="Restart" type="Button" parent="." unique_id=1644745159]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -99.0
+offset_top = -318.0
+offset_right = 100.5
+offset_bottom = -243.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_px6ft")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmiqc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yrhcw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5rqtc")
+text = "Restart
+"
+script = ExtResource("2_1df28")
+
+[node name="Exit" type="Button" parent="Restart" unique_id=1920436643]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.75
+offset_top = 9.0
+offset_right = 98.75
+offset_bottom = 84.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_px6ft")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mmiqc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yrhcw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5rqtc")
+text = "Exit
+"
+
+[node name="Label" type="Label" parent="." unique_id=1756125632]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -286.0
+offset_top = -188.0
+offset_right = 288.0
+offset_bottom = -51.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = SubResource("FontVariation_p3yqo")
+theme_override_font_sizes/font_size = 100
+text = "GAME OVER"
