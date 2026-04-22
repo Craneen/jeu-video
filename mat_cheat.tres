@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c0e65h122gu1n"]
+
+[ext_resource type="Texture2D" uid="uid://cprsxurvr0gtm" path="res://Capture d’écran 2026-04-22 à 11.14.18.png" id="1_wnnf8"]
+
+[resource]
+albedo_texture = ExtResource("1_wnnf8")
