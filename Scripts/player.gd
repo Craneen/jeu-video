@@ -5,7 +5,7 @@ extends Node3D
 @onready var arduino = ArduinoManager 
 
 const MOUSE_SENSITIVITY = 0.003
-const TIME_TO_WIN = 20.0 
+const TIME_TO_WIN = 60.0 
 
 const FOV_NORMAL = 75.0
 const FOV_ZOOM = 20.0
