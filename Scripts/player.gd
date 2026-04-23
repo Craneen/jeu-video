@@ -1,7 +1,7 @@
 extends Node3D
 
 const MOUSE_SENSITIVITY = 0.003
-const TIME_TO_WIN = 20.0 # Temps pour tester la victoire
+const TIME_TO_WIN = 60.0 # Temps pour tester la victoire
 
 # --- RÉGLAGES DU ZOOM ---
 const FOV_NORMAL = 75.0
