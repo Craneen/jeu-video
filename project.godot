@@ -15,6 +15,10 @@ run/main_scene="uid://dedumhdjkx8og"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ArduinoManager="*uid://duybalgjf5nrj"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gdserial/plugin.cfg")
